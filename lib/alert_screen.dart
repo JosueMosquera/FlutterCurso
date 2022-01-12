@@ -10,6 +10,7 @@ class AlertScreen extends StatelessWidget {
         title: const Text('Alert Screen'),
         elevation: 0,
       ),
+      body: const Text('Alert Screen body'),
     );
   }
 }

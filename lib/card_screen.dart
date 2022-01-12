@@ -10,6 +10,7 @@ class CardScreen extends StatelessWidget {
         title: const Text('Card Screen'),
         elevation: 0,
       ),
+      body: const Text('Card Screen body'),
     );
   }
 }

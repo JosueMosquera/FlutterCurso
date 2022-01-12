@@ -21,7 +21,21 @@ class ListView1Screen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('List view tipo 1'),
       ),
-      // body: ListView.builder(itemBuilder: options)
+      body: ListView.separated(
+        itemCount: options.length,
+        itemBuilder: (context, index) => ListTile(
+          title: Text(options[index]),
+          leading: const Icon(
+            Icons.arrow_forward_ios_outlined,
+            color: Colors.indigo,
+          ),
+          onTap: () {
+            final game = options[index];
+            print(game);
+          },
+        ),
+        separatorBuilder: (_, __) => const Divider(),
+      ),
     );
   }
 }

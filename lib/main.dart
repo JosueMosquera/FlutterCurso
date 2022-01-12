@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       home: const HomeScreen(),
       initialRoute: AppRoutes.initialRoute,
-      routes: AppRoutes.routes,
+      routes: AppRoutes.getAppRoutes(),
       onGenerateRoute: (settings) => AppRoutes.onGenerateRoute(settings),
     );
   }

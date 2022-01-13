@@ -8,7 +8,7 @@ class CustomCardType1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Column(
-        children:  [
+        children: [
           const ListTile(
             leading: Icon(
               Icons.photo_album_outlined,
@@ -23,8 +23,16 @@ class CustomCardType1 extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                TextButton(onPressed: (){}, child: const Text('Cancel')),
-                TextButton(onPressed: (){}, child: const Text('Ok'))
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Cancel'),
+                  style: TextButton.styleFrom(primary: Colors.indigo),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Ok'),
+                  style: TextButton.styleFrom(primary: Colors.indigo),
+                ),
               ],
             ),
           ),
